@@ -1,3 +1,5 @@
+package navegador;
+
 public interface Navegador {
     public default void abrirPagina(){
         verificarConexao();
