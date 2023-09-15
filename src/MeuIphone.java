@@ -1,11 +1,12 @@
 import ReprodutorMusical.ReprodutorMusical;
-import navegador.Navegador;
 import navegador.NavegadorInternet;
+import telefone.AparelhoTelefonico;
 
 public class MeuIphone {
     public static void main(String[] args) {
         NavegadorInternet navegador = new NavegadorInternet();
         ReprodutorMusical reprodutor = new ReprodutorMusical();
+        AparelhoTelefonico telefone = new AparelhoTelefonico();
 
         navegador.abrirPagina();
         navegador.adicionarNovaPagina();
@@ -22,5 +23,9 @@ public class MeuIphone {
         reprodutor.diminuirVolume();
         System.out.println("/*******************************/");
 
+        telefone.ligar();
+        telefone.atender();
+        telefone.recusar();
+        telefone.iniciarCorreioDeVoz();
     }
 }
